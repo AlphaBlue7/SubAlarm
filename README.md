@@ -9,7 +9,7 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 ## Prerequisites
 1. Golang should be installed `sudo apt install golang -y`
 
-2. The GOPATH [ /home/<USERNAME>/go/bin/ ] should be added to the $PATH environment variable
+2. The GOPATH /home/**USERNAME**/go/bin/ should be added to the $PATH environment variable
 
 3. subfinder by projectdiscovery is to be installed ( `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` ).
 
@@ -19,7 +19,7 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 
 6. -- Telegram bot made using @botfather on telegram and it's API Key and chat IDs
 
-7. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config`
+7. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config` . It goes to say that the `alert_sub.sh ` and the `alertconfig.yaml ` files must be altered accordingly
 
 
 

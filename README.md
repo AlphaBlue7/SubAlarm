@@ -9,7 +9,7 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 ## Prerequisites
 1. Golang should be installed `sudo apt install golang -y`
 
-2. The GOPATH /home/**USERNAME**/go/bin/ should be added to the $PATH environment variable
+2. The GOPATH [/home/**USERNAME**/go/bin/] should be added to the $PATH environment variable
 
 3. subfinder by projectdiscovery is to be installed ( `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` ).
 

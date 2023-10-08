@@ -1,5 +1,5 @@
 # Subdomain-Alert-Bot
-Script made in BASH that takes adavantage of preinstalled notify, subfinder and anew made available through $PATH to send telegram alerts to once new subdomains are identified
+Script written in bash that checks for subdomains at regular time interval to identify and notify the user as and when a new subdomain goes live
 
 
 I finally tried my hand at scripting and I'm pleased to say that I wrote this script based on the showcase of the `subfinder`, `notify` tool by [@projectdiscovery](https://github.com/projectdiscovery/) on NahamSec's youtube channel over here https://youtu.be/wP3n1JnqtMU . This script also uses the `anew` tool made by [@tomnomnom](https://github.com/tomnomnom/)

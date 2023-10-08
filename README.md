@@ -8,7 +8,9 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 # Prerequisites
 Golang should be installed `sudo apt install golang -y`
 The GOPATH [ /home/<USERNAME>/go/bin/ ] should be added to the $PATH environment variable
-subfinder and notify by projectdiscovery ( `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` and `go install -v github.com/projectdiscovery/notify/cmd/notify@latest` ) and anew by tomnomnom ( `go install -v github.com/tomnomnom/anew@latest` ) should be installed.
+subfinder by projectdiscovery is to be installed ( `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` ).
+notify by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/notify/cmd/notify@latest` ).
+anew by tomnomnom is to be installed ( `go install -v github.com/tomnomnom/anew@latest` ).
 -- Telegram bot made using @botfather on telegram and it's API Key and chat IDs
 -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config`
 

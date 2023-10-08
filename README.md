@@ -19,7 +19,7 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 
 6. -- Telegram bot made using @botfather on telegram and it's API Key and chat IDs
 
-7. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config` . It goes to say that the `alert_sub.sh ` and the `alertconfig.yaml ` files must be altered accordingly
+   A. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config` . It goes to say that the `alert_sub.sh ` and the `alertconfig.yaml ` files must be altered accordingly
 
 
 

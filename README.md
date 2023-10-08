@@ -18,7 +18,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 5. anew by tomnomnom is to be installed (`go install -v github.com/tomnomnom/anew@latest`).
 
-6. -- Telegram bot made using @botfather on telegram and it's API Key and chat IDs
+6. -- Telegram bot made using [@botfather](https://web.telegram.org/k/#@BotFather) on telegram and it's API Key and chat IDs
 
    A. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config` . It goes to say that the `alert_sub.sh ` and the `alertconfig.yaml ` files must be altered accordingly
 

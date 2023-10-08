@@ -1,0 +1,5 @@
+telegram:
+  - id: 'tel'
+    telegram_api_key: 'YOUR TELEGRAM BOT API KEY GOES HERE'
+    telegram_chat_id: 'Send a test message to the bot, replace the API key over here and navigate to the following URL to receive the ID https://api.telegram.org/bot<telegram_api_key>/getupdates'
+    telegram_parsemode: 'Markdown' 

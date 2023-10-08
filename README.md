@@ -6,6 +6,7 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 
 
 
+
 ## Prerequisites
 1. Golang should be installed `sudo apt install golang -y`
 
@@ -23,6 +24,7 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 
 
 
+
 ## Algorithm
 1. The list of already identified subdomains are to pasted in `subop.txt`.
 
@@ -37,6 +39,7 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 6. The `runcount.txt` is used to keep track of the number of iterations
 
 7. The script runs at an interval of 60 minutes
+
 
 
 

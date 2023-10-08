@@ -2,7 +2,7 @@
 Script made in BASH that takes adavantage of preinstalled notify, subfinder and anew made available through $PATH to send telegram alerts to once new subdomains are identified
 
 
-I wrote this script based on the showcase of the subfinder, notify tool by @projectdiscovery on NahamSec's youtube channel over here https://youtu.be/wP3n1JnqtMU . This script also uses the anew tool made by @tomnomnom
+I finally tried my hand at scripting and I'm pleased to say that I wrote this script based on the showcase of the `subfinder`, `notify` tool by [@projectdiscovery](https://github.com/projectdiscovery/) on NahamSec's youtube channel over here https://youtu.be/wP3n1JnqtMU . This script also uses the `anew` tool made by [@tomnomnom](https://github.com/tomnomnom/)
 
 
 
@@ -12,11 +12,11 @@ I wrote this script based on the showcase of the subfinder, notify tool by @proj
 
 2. The GOPATH [/home/**USERNAME**/go/bin/] should be added to the $PATH environment variable
 
-3. subfinder by projectdiscovery is to be installed ( `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` ).
+3. subfinder by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest`).
 
-4. notify by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/notify/cmd/notify@latest` ).
+4. notify by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/notify/cmd/notify@latest`).
 
-5. anew by tomnomnom is to be installed ( `go install -v github.com/tomnomnom/anew@latest` ).
+5. anew by tomnomnom is to be installed (`go install -v github.com/tomnomnom/anew@latest`).
 
 6. -- Telegram bot made using @botfather on telegram and it's API Key and chat IDs
 

@@ -2,7 +2,7 @@
 Script written in bash that checks for subdomains at regular time interval to identify and notify the user as and when a new subdomain goes live
 
 
-I finally tried my hand at scripting and I'm pleased to say that I wrote this script based on the showcase of the `subfinder`, `notify` tool by [@projectdiscovery](https://github.com/projectdiscovery/) on NahamSec's youtube channel over here https://youtu.be/wP3n1JnqtMU . This script also uses the `anew` tool made by [@tomnomnom](https://github.com/tomnomnom/)
+I finally tried my hand at scripting and I'm pleased to say that I wrote this script based on the showcase of the `subfinder`, `notify` tool by [@projectdiscovery](https://github.com/projectdiscovery/) on NahamSec's youtube channel over here https://youtu.be/wP3n1JnqtMU .
 
 
 
@@ -16,9 +16,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 4. notify by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/notify/cmd/notify@latest`).
 
-5. anew by tomnomnom is to be installed (`go install -v github.com/tomnomnom/anew@latest`).
-
-6. -- Telegram bot made using [@botfather](https://web.telegram.org/k/#@BotFather) on telegram and it's API Key and chat IDs
+5. -- Telegram bot made using [@botfather](https://web.telegram.org/k/#@BotFather) on telegram and it's API Key and chat IDs
 
    A. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config` . It goes to say that the `alert_sub.sh ` and the `alertconfig.yaml ` files must be altered accordingly
 
@@ -28,17 +26,19 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 ## Algorithm
 1. The list of already identified subdomains are to pasted in `subop.txt`.
 
-2. subfinder is used to generate a list of subdomains of the target domain and are saved in `subop1.txt`.
+2. sort is used to alphabatically arrange the list of subdomains in `subop.txt`
 
-3. anew is used to compare the two lists and identify the new domain(s) that went live.
+3. subfinder is used to generate a list of subdomains of the target domain and are saved in `subop1.txt` once sorted alphabetically.
 
-4. The notify tool is integrated with telegram in my interpretation.
+4. diff is used in tandum with grep and sed to identify the differences and the output is saved to `newsubdomains.txt`
 
-5. Making use of the above integration the bot sends the user a notification alerting the user of the new domains identified
+5. The notify tool is integrated with telegram in my interpretation.
 
-6. The `runcount.txt` is used to keep track of the number of iterations
+6. Making use of the above integration the bot sends the user a notification alerting the user of the new domains identified
 
-7. The script runs at an interval of 60 minutes
+7. The `runcount.txt` is used to keep track of the number of iterations
+
+8. The script runs at an interval of 60 minutes
 
 
 

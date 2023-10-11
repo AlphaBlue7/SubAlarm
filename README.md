@@ -21,6 +21,12 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
    A. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config` . It goes to say that the `alert_sub.sh ` and the `alertconfig.yaml ` files must be altered accordingly
 
 
+## Usage
+
+Run the below to execute the script and have it run in the background
+
+`$ ./alert_sub.sh &`
+
 
 
 ## Algorithm

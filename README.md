@@ -10,7 +10,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 ## Prerequisites
 1. Golang should be installed `sudo apt install golang -y`
 
-2. The `nohup` command should be available . It is by default installed as a part of the 'coreutils' package. `sudo apt install coreutils`
+2. The **nohup** command should be available . It is by default installed as a part of the 'coreutils' package. (`sudo apt install coreutils`)
 
 3. The GOPATH [/home/**USERNAME**/go/bin/] should be added to the $PATH environment variable
 

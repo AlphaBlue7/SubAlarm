@@ -25,7 +25,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 Run the below to execute the script and have it run in the background
 
-`$ ./alert_sub.sh &`
+`$ nohup ./alert_sub.sh &`
 
 
 
@@ -44,7 +44,9 @@ Run the below to execute the script and have it run in the background
 
 7. The `runcount.txt` is used to keep track of the number of iterations
 
-8. The script runs at an interval of 60 minutes
+8. The script is ran along with the `nohup` command as the prefix. I noticed that as an SSH session is closed the script no longer runs in the background despite having used `&`. The nohup command which is short for 'no hang up' prevents the processes from receving the signal to hang up.
+
+9. The script runs at an interval of 60 minutes
 
 
 

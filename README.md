@@ -71,6 +71,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 To stop the script you can kill the process belonging to the script and the sleep command.
 The targetdomainlist.txt file can be updated during the interval to add new target domains.
 The identified domains can be removed from the telegram notification by removing {{data}} from line 13 of the alert_sub.sh
+The interval at which the script is run can be modified by modifying the number of seconds mentioned in line 22 of the alert_sub.sh
 
 
 ## Contact

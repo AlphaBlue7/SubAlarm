@@ -1,5 +1,5 @@
 # Subdomain-Alert-Bot
-Script written in bash that checks for subdomains at regular time interval to identify and notify the user as and when a new subdomain goes live
+Script written in bash that perpetually checks for subdomains of teh target domains at regular intervals to identify and notify the user as and when a new subdomain goes live
 
 
 I finally tried my hand at scripting and I'm pleased to say that I wrote this script based on the showcase of the `subfinder`, `notify` tool by [@projectdiscovery](https://github.com/projectdiscovery/) on NahamSec's youtube channel over here https://youtu.be/wP3n1JnqtMU .
@@ -8,7 +8,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 
 ## Prerequisites
-1. Golang should be installed `sudo apt install golang -y`
+1. **Golang** should be installed `sudo apt install golang -y`
 
 2. The **nohup** command should be available . It is by default installed as a part of the 'coreutils' package. (`sudo apt install coreutils`)
 
@@ -29,9 +29,9 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
    
    `git clone https://github.com/AlphaBlue7/Subdomain-Alert-Bot/`
 
-2. Edit line 8 of `alert_sub.sh` and replace `TARGETWEBSITE.com` with the desired target.
+2. Add the target domains in `targetdomainlist.txt`
    
-   A. Alternatively the `-d` flag in line 8 can be replaced with `-dL` proceeded by the location of a text file containing all the target domains
+   A. Alternatively to target one single domain, the `-dL` flag in line 8 can be replaced with `-d` followed by the target domain
 
 3. Run the below to execute the script and have it run in the background
 
@@ -42,7 +42,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 ## Algorithm
 1. The list of already identified subdomains are to pasted in `subop.txt`.
 
-2. sort is used to alphabatically arrange the list of subdomains in `subop.txt`
+2. sort is used to alphabatically arrange the list of subdomains in `subop.txt` to facilitate comparison
 
 3. subfinder is used to generate a list of subdomains of the target domain and are saved in `subop1.txt` once sorted alphabetically.
 
@@ -52,17 +52,25 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 6. Making use of the above integration the bot sends the user a notification alerting the user of the new domains identified
 
-7. The `runcount.txt` is used to keep track of the number of iterations
+7. The first 5 lines of `config.yaml` is used to create `temp.txt` which then replaces `config.yaml` thereby reverting the changes. This enables the configuration file to be used for further iterations.
 
-8. The script is ran along with the `nohup` command as the prefix. I noticed that as an SSH session is closed the script no longer runs in the background despite having used `&`. The nohup command which is short for 'no hang up' prevents the processes from receving the signal to hang up.
+8. Contents of `newsubdomains.txt` is appended to `subop.txt` and then further sorted to facilitate comparison
 
-9. The entirety of the nohup output (including the std error) is redirected to output.log 
+9. The `runcount.txt` is used to keep track of the number of iterations
 
-10. The script runs at an interval of 60 minutes
+10. The script is ran along with the `nohup` command as the prefix. I noticed that as an SSH session is closed the script no longer runs in the background despite having used `&`. The nohup command which is short for 'no hang up' prevents the processes from receving the signal to hang up.
 
-    
+11. The entirety of the nohup output (including the std error) is redirected to output.log 
+
+12. The script runs at an interval of 60 minutes
 
 
+
+## Appendix    
+
+To stop the script you can kill the process belonging to the script and the sleep command.
+The targetdomainlist.txt file can be updated during the interval to add new target domains.
+The identified domains can be removed from the telegram notification by removing {{data}} from line 13 of the alert_sub.sh
 
 
 ## Contact

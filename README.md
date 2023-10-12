@@ -10,13 +10,13 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 ## Prerequisites
 1. **Golang** should be installed `sudo apt install golang -y`
 
-2. The **nohup** command should be available . It is by default installed as a part of the 'coreutils' package. (`sudo apt install coreutils`)
+2. The **nohup** command should be available . It is by default installed as a part of the 'coreutils' package. `sudo apt install coreutils`
 
 3. The GOPATH [/home/**USERNAME**/go/bin/] should be added to the $PATH environment variable
 
-4. subfinder by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest`).
+4. subfinder by projectdiscovery is to be installed `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest`
 
-5. notify by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/notify/cmd/notify@latest`).
+5. notify by projectdiscovery is to be installed `go install -v github.com/projectdiscovery/notify/cmd/notify@latest`
 
 6. -- Telegram bot made using [@botfather](https://web.telegram.org/k/#@BotFather) on telegram and it's API Key and chat IDs
 

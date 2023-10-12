@@ -10,13 +10,15 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 ## Prerequisites
 1. Golang should be installed `sudo apt install golang -y`
 
-2. The GOPATH [/home/**USERNAME**/go/bin/] should be added to the $PATH environment variable
+2. The `nohup` command should be available ``
 
-3. subfinder by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest`).
+3. The GOPATH [/home/**USERNAME**/go/bin/] should be added to the $PATH environment variable
 
-4. notify by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/notify/cmd/notify@latest`).
+4. subfinder by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest`).
 
-5. -- Telegram bot made using [@botfather](https://web.telegram.org/k/#@BotFather) on telegram and it's API Key and chat IDs
+5. notify by projectdiscovery is to be installed (`go install -v github.com/projectdiscovery/notify/cmd/notify@latest`).
+
+6. -- Telegram bot made using [@botfather](https://web.telegram.org/k/#@BotFather) on telegram and it's API Key and chat IDs
 
    A. -- Instead of Telegram any of the providers mentioned here can be used `https://github.com/projectdiscovery/notify#provider-config` . It goes to say that the `alert_sub.sh ` and the `alertconfig.yaml ` files must be altered accordingly
 
@@ -25,7 +27,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 Run the below to execute the script and have it run in the background
 
-`$ nohup ./alert_sub.sh &`
+`$ nohup ./alert_sub.sh > output.log 2>&1 &`
 
 
 
@@ -46,7 +48,11 @@ Run the below to execute the script and have it run in the background
 
 8. The script is ran along with the `nohup` command as the prefix. I noticed that as an SSH session is closed the script no longer runs in the background despite having used `&`. The nohup command which is short for 'no hang up' prevents the processes from receving the signal to hang up.
 
-9. The script runs at an interval of 60 minutes
+9. The entirety of the nohup output (including the std error) is redirected to output.log 
+
+10. The script runs at an interval of 60 minutes
+
+    
 
 
 

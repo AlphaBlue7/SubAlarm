@@ -25,7 +25,13 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 ## Usage
 
-Run the below to execute the script and have it run in the background
+1. Clone the repository
+`git clone https://github.com/AlphaBlue7/Subdomain-Alert-Bot/`
+
+2. Edit line 8 of `alert_sub.sh` and replace `TARGETWEBSITE.com` with the desired target.
+   A. Alternatively the `-d` flag in line 8 can be replaced with `-dL` proceeded by the location of a text file containing all the target domains
+
+3. Run the below to execute the script and have it run in the background
 
 `$ nohup ./alert_sub.sh > output.log 2>&1 &`
 

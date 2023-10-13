@@ -1,7 +1,6 @@
 #!/bin/bash
 
 iterationcount=$(cat runcount.txt)
-cat subop.txt | sort > subop.txt
 
 while true;
 do
@@ -15,9 +14,11 @@ do
 
  head -n 5 config.yaml > temp.txt && mv temp.txt config.yaml
  cat newsubdomains.txt >> subop.txt
- cat subop.txt | sort > subop.txt
-
  ((iterationcount++))
+
+ cat subop.txt | sort > temp.txt;
+ cp temp.txt subop.txt;
+
  echo "$iterationcount" > runcount.txt
  sleep 3600
 

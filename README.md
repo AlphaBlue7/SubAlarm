@@ -1,5 +1,5 @@
-# SubAlarm - A Subdomain Alert Bot
-Script written in bash that perpetually checks for subdomains of teh target domains at regular intervals to identify and notify the user as and when a new subdomain goes live
+# SubAlarm - A Subdomain Tracking and Alerting Bot
+Script written in bash that perpetually checks for subdomains of teh target domains at regular intervals to identify and notify the user as and when a new subdomain goes live. SubAlarm was created with the intent of assisting bug hunters and red teamers to be completely aware of all subdomains of the targeted domain(s).
 
 
 I finally tried my hand at scripting and I'm pleased to say that I wrote this script based on the showcase of the `subfinder`, `notify` tool by [@projectdiscovery](https://github.com/projectdiscovery/) on NahamSec's youtube channel over here https://youtu.be/wP3n1JnqtMU .

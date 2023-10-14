@@ -35,7 +35,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 3. Run the below to execute the script and have it run in the background
 
-   `$ nohup ./alert_sub.sh > output.log 2>&1 &`
+   `$ nohup ./subalarm.sh > output.log 2>&1 &`
 
 
 

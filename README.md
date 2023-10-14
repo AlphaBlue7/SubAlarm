@@ -1,4 +1,4 @@
-# Subdomain-Alert-Bot
+# SubAlarm - A Subdomain Alert Bot
 Script written in bash that perpetually checks for subdomains of teh target domains at regular intervals to identify and notify the user as and when a new subdomain goes live
 
 

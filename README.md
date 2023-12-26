@@ -27,7 +27,7 @@ I finally tried my hand at scripting and I'm pleased to say that I wrote this sc
 
 1. Clone the repository
    
-   `git clone https://github.com/AlphaBlue7/Subdomain-Alert-Bot/`
+   `git clone https://github.com/kriptn/Subdomain-Alert-Bot/`
 
 2. Add the target domains in `targetdomainlist.txt`
    
